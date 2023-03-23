@@ -52,7 +52,7 @@ button {
 }
 
 .container {
-  width: 1199px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -60,4 +60,323 @@ button {
 .section {
   padding-top: 110px;
   padding-bottom: 110px;
+}
+.btn {
+  width: 181px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  border: none;
+  background-color: var(--accent-color);
+}
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.subtitle::before {
+  content: "";
+  display: block;
+  width: 143px;
+  height: 1px;
+  margin-right: 12px;
+  background-color: var(--text-color);
+}
+.accent-sub {
+  margin-right: 6px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125.5%;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.accent-title {
+  color: var(--accent-color);
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* =============== header ====================== */
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 21px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-icon {
+  margin-right: 6px;
+}
+.logo-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white-color);
+}
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+.site-nav-list .link {
+  display: block;
+  padding: 10px 20px;
+
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.header-container .btn {
+  width: fit-content;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* ======================= hero ================== */
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--qa-dark-color);
+  background-image: linear-gradient(
+      90deg,
+      #202020 -2.99%,
+      rgba(32, 32, 32, 0) 105.45%
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container {
+  padding-top: 272px;
+  padding-bottom: 198px;
+}
+.hero-subtitle {
+  margin-bottom: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.hero-title {
+  width: 795px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 128.5%;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 555px;
+  height: 2px;
+  margin-left: 190px;
+  margin-bottom: 23px;
+  background-color: var(--accent-color);
+}
+.hero-text {
+  width: 792px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.buttons-wrap {
+  display: flex;
+  align-items: center;
+}
+.buttons-wrap .btn:last-child {
+  margin-left: 20px;
+  color: var(--qa-dark-color);
+  background-color: var(--white-color);
+}
+
+/* ==================== about ====================== */
+.about .container {
+  display: flex;
+}
+.about-img {
+  position: relative;
+  margin-right: 219px;
+}
+.about-img .img:last-child {
+  position: absolute;
+  top: 186px;
+  left: 234px;
+}
+.about-content {
+  width: 534px;
+}
+.about-content .title {
+  margin-bottom: 31px;
+}
+.about-content .first {
+  margin-bottom: 26px;
+}
+.about-content .second {
+  margin-bottom: 36px;
+}
+
+/* ==================== offers ====================== */
+.offers {
+  background-color: var(--qa-dark-color);
+}
+.offers .container {
+  display: flex;
+}
+.offers-content {
+  margin-right: 89px;
+}
+.offers-content .subtitle {
+  color: var(--white-color);
+  margin-bottom: 19px;
+}
+.offers-content .title {
+  width: 443px;
+  margin-bottom: 23px;
+  color: var(--white-color);
+}
+.offers-content .text {
+  width: 534px;
+  margin-bottom: 40px;
+  color: var(--white-color);
+}
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 61px;
+}
+
+.offers-list .item {
+  position: relative;
+  width: 262px;
+  height: 168px;
+  padding: 54px 15px 22px;
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+.card-icon {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  background-color: var(--accent-color);
+  border: 3px solid var(--white-color);
+  border-radius: 50%;
+}
+.card-title {
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.card-text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 155%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* ================== portfolio ======================== */
+.portfolio .subtitle::before {
+  width: 163px;
+  margin-left: auto;
+}
+.portfolio .subtitle::after {
+  content: "";
+  display: block;
+  width: 163px;
+  height: 1px;
+  margin-left: 12px;
+  margin-right: auto;
+  background-color: var(--text-color);
+}
+.portfolio .title {
+  width: 457px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
+}
+.filter-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-btn-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.filter-btn {
+  display: block;
+  padding: 10px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: #c4c4c4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+.radio:hover + .filter-btn,
+.radio:focus + .filter-btn,
+.radio:checked + .filter-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.portfolio-list {
+  display: flex;
+  align-items: flex-start;
+}
+.portfolio-list .item:not(:last-child) {
+  margin-right: 24px;
 }

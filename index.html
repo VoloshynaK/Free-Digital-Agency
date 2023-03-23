@@ -13,120 +13,159 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="./index.html">
-          <svg>
-            <use></use>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="50" height="53">
+            <use href="./images/sprite.svg#logo"></use>
           </svg>
-          <p>Canvas Lancer</p>
+          <p class="logo-text">Canvas Lancer</p>
         </a>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Faqs</a></li>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li class="item"><a class="link" href="">Home</a></li>
+            <li class="item"><a class="link" href="">About Us</a></li>
+            <li class="item"><a class="link" href="">Services</a></li>
+            <li class="item"><a class="link" href="">Portfolio</a></li>
+            <li class="item">
+              <a class="link" href="">Testimonials</a>
+            </li>
+            <li class="item"><a class="link" href="">Faqs</a></li>
           </ul>
         </nav>
-        <button type="button">Contact Us</button>
+        <button type="button" class="btn">Contact Us</button>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <p>Welcome To Canavas Lancer</p>
-          <h1>Designing the Future with <span>Canvas Lancer</span></h1>
-          <p>
+        <div class="container hero-container">
+          <p class="hero-subtitle">
+            Welcome To <span class="accent-sub">Canavas Lancer</span>
+          </p>
+          <h1 class="hero-title">
+            Designing the Future with <span>Canvas Lancer</span>
+          </h1>
+          <p class="hero-text">
             Lorem ipsum dolor sit amet consectetur. Aliquam quisque cursus proin
             adipiscing quis diam. Eu fringilla elit commodo nec aliquet. Augue
             pharetra nibh co
           </p>
-          <div>
-            <button type="button">Hire Us</button>
-            <button type="button">View Portfolio</button>
+          <div class="buttons-wrap">
+            <button class="btn" type="button">Hire Us</button>
+            <button class="btn" type="button">View Portfolio</button>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="about section">
         <div class="container">
-          <div>
+          <div class="about-img">
             <img
+              class="img"
               srcset="./images/about-1@1x.jpg 1x, ./images/about-1@2x.jpg 2x"
               src="./images/about-1@1x.jpg"
               alt="team work"
+              width="398"
             />
             <img
+              class="img"
               srcset="./images/about-2@1x.jpg 1x, ./images/about-2@2x.jpg 2x"
               src="./images/about-2@1x.jpg"
               alt="team work"
+              width="301"
             />
           </div>
-          <div>
-            <p><span>About</span>CanvasLancer</p>
-            <h2>Introduction To Best <span>Digital Agency</span></h2>
-            <p>
+          <div class="about-content">
+            <p class="subtitle">
+              <span class="accent-sub">About</span> CanvasLancer
+            </p>
+            <h2 class="title">
+              Introduction To Best
+              <span class="accent-title">Digital Agency</span>
+            </h2>
+            <p class="text first">
               Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
               enim id gravida pulvinar. Tristique consectetur mi curabitur
               congue enim dignissim amet justo. Porta morbi nulla aliquet
               adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
               quisque amet. Quam pellentesque in tristique.
             </p>
-            <p>
+            <p class="text second">
               Sed neque scelerisque quam pulvinar. Risus dictum elementum lacus
               urna. Neque eget sagittis vulputate nam id morbi id. Aliquam
               molestie posuere pulvinar arcu.
             </p>
-            <button type="button">Hire Us</button>
+            <button class="btn" type="button">Hire Us</button>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="offers section">
         <div class="container">
-          <div>
-            <p>What We Are <span>Offering</span></p>
-            <h2><span>Services</span> We Can Offer You !</h2>
-            <p>
+          <div class="offers-content">
+            <p class="subtitle">
+              What We Are <span class="accent-sub">Offering</span>
+            </p>
+            <h2 class="title">
+              <span class="accent-title">Services</span> We Can Offer You !
+            </h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
               enim id gravida pulvinar. Tristique consectetur mi curabitur
               congue enim dignissim amet justo. Porta morbi nulla aliquet
               adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
               quisque amet. Quam pellentesque in tristique
             </p>
-            <button type="button">Hire Us</button>
+            <button class="btn" type="button">Hire Us</button>
           </div>
-          <ul>
-            <li>
-              <h3>UI/UX</h3>
-              <p>
+          <ul class="offers-list">
+            <li class="item">
+              <div class="card-icon">
+                <svg width="49" height="49">
+                  <use href="./images/sprite.svg#wireframing"></use>
+                </svg>
+              </div>
+              <h3 class="card-title">UI/UX</h3>
+              <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
                 arcu enim id gravida pulvinar. Tristique
               </p>
             </li>
-            <li>
-              <h3>Development</h3>
-              <p>
+            <li class="item">
+              <div class="card-icon">
+                <svg width="49" height="49">
+                  <use href="./images/sprite.svg#code"></use>
+                </svg>
+              </div>
+              <h3 class="card-title">Development</h3>
+              <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
                 arcu enim id gravida pulvinar. Tristique
               </p>
             </li>
-            <li>
-              <h3>Mobile Development</h3>
-              <p>
+            <li class="item">
+              <div class="card-icon">
+                <svg width="49" height="49">
+                  <use href="./images/sprite.svg#ux-ui"></use>
+                </svg>
+              </div>
+              <h3 class="card-title">Mobile Development</h3>
+              <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
                 arcu enim id gravida pulvinar. Tristique
               </p>
             </li>
-            <li>
-              <h3>SEO</h3>
-              <p>
+            <li class="item">
+              <div class="card-icon">
+                <svg width="49" height="49">
+                  <use href="./images/sprite.svg#rocket"></use>
+                </svg>
+              </div>
+              <h3 class="card-title">SEO</h3>
+              <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
                 arcu enim id gravida pulvinar. Tristique
               </p>
@@ -134,49 +173,88 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="portfolio section">
         <div class="container">
-          <p>Our Portfolio</p>
-          <h2><span>Projects</span> We Have Completed</h2>
-          <ul>
-            <li><button type="button">All</button></li>
-            <li><button type="button">UI/UX</button></li>
-            <li><button type="button">Development</button></li>
-            <li><button type="button">Mobile Development</button></li>
-            <li><button type="button">SEO</button></li>
+          <p class="subtitle">Our Portfolio</p>
+          <h2 class="title">
+            <span class="accent-title">Projects</span> We Have Completed
+          </h2>
+          <ul class="filter-btn-list">
+            <li class="item">
+              <input class="radio" type="radio" name="filter" id="radio-btn" />
+              <label class="filter-btn" for="radio-btn">All</label>
+            </li>
+            <li class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="filter"
+                id="radio-btn-1"
+              />
+              <label class="filter-btn" for="radio-btn-1">UI/UX</label>
+            </li>
+            <li class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="filter"
+                id="radio-btn-2"
+              />
+              <label class="filter-btn" for="radio-btn-2">Development</label>
+            </li>
+            <li class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="filter"
+                id="radio-btn-3"
+              />
+              <label class="filter-btn" for="radio-btn-3"
+                >Mobile Development</label
+              >
+            </li>
+            <li class="item">
+              <input
+                class="radio"
+                type="radio"
+                name="filter"
+                id="radio-btn-4"
+              />
+              <label class="filter-btn" for="radio-btn-4">SEO</label>
+            </li>
           </ul>
-          <ul>
-            <li>
-              <img
-                srcset="
-                  ./images/portfolio-1@1x.jpg 1x,
-                  ./images/portfolio-1@2x.jpg 2x
-                "
-                src="./images/portfolio-1@1x.jpg"
-                alt="project #1"
-              />
-            </li>
-            <li>
-              <img
-                srcset="
-                  ./images/portfolio-2@1x.jpg 1x,
-                  ./images/portfolio-2@2x.jpg 2x
-                "
-                src="./images/portfolio-2@1x.jpg"
-                alt="project #2"
-              />
-            </li>
-            <li>
-              <img
-                srcset="
-                  ./images/portfolio-3@1x.jpg 1x,
-                  ./images/portfolio-3@2x.jpg 2x
-                "
-                src="./images/portfolio-3@1x.jpg"
-                alt="project #3"
-              />
-            </li>
-          </ul>
+          <div class="portfolio-list">
+            <img
+              class="item"
+              srcset="
+                ./images/portfolio-1@1x.jpg 1x,
+                ./images/portfolio-1@2x.jpg 2x
+              "
+              src="./images/portfolio-1@1x.jpg"
+              alt="project #1"
+              width="374"
+            />
+            <img
+              class="item"
+              srcset="
+                ./images/portfolio-2@1x.jpg 1x,
+                ./images/portfolio-2@2x.jpg 2x
+              "
+              src="./images/portfolio-2@1x.jpg"
+              alt="project #2"
+              width="374"
+            />
+            <img
+              class="item"
+              srcset="
+                ./images/portfolio-3@1x.jpg 1x,
+                ./images/portfolio-3@2x.jpg 2x
+              "
+              src="./images/portfolio-3@1x.jpg"
+              alt="project #3"
+              width="374"
+            />
+          </div>
         </div>
       </section>
       <section class="section">
